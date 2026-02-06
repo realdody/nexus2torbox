@@ -1,0 +1,138 @@
+/* Torbox button styles for NexusMods */
+
+#action-torbox .torbox-btn {
+  cursor: pointer;
+}
+
+#action-torbox .icon-torbox {
+  fill: currentColor;
+  margin-right: 5px;
+}
+
+#action-torbox .torbox-btn:hover {
+  background: rgba(218, 143, 53, 0.2);
+}
+
+#action-torbox .torbox-btn.torbox-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+#action-torbox .torbox-btn.torbox-success {
+  background: rgba(76, 175, 80, 0.3);
+  color: #4caf50;
+}
+
+#action-torbox .torbox-btn.torbox-error {
+  background: rgba(244, 67, 54, 0.3);
+  color: #f44336;
+}
+
+/* Toast notification styles */
+.torbox-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 999999;
+  transform: translateX(120%);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.torbox-notification.show {
+  transform: translateX(0);
+}
+
+.torbox-notification-success {
+  background: #4caf50;
+  color: white;
+}
+
+.torbox-notification-error {
+  background: #f44336;
+  color: white;
+}
+
+/* Progress notification styles */
+.torbox-progress-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 999998;
+  transform: translateX(120%);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: #1a1a2e;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #da8f35;
+}
+
+.torbox-progress-notification.show {
+  transform: translateX(0);
+}
+
+.torbox-progress-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(218, 143, 53, 0.3);
+  border-top-color: #da8f35;
+  border-radius: 50%;
+  animation: torbox-spin 1s linear infinite;
+}
+
+@keyframes torbox-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.torbox-progress-text {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* File-specific Torbox button styles */
+.torbox-file-btn-wrapper {
+  display: inline-block;
+}
+
+.torbox-file-btn {
+  cursor: pointer;
+}
+
+.torbox-file-btn .icon-torbox {
+  fill: currentColor;
+  margin-right: 5px;
+}
+
+.torbox-file-btn:hover {
+  background: rgba(218, 143, 53, 0.2) !important;
+}
+
+.torbox-file-btn.torbox-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.torbox-file-btn.torbox-success {
+  background: rgba(76, 175, 80, 0.3) !important;
+  color: #4caf50 !important;
+}
+
+.torbox-file-btn.torbox-error {
+  background: rgba(244, 67, 54, 0.3) !important;
+  color: #f44336 !important;
+}
