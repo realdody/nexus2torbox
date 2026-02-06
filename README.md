@@ -1,6 +1,7 @@
 Uses the Torbox API to automatically submit a NexusMods link and get the direct download link back.
 
 You have to add your API key in the extension menu by clicking on it
+
 <img width="292" height="220" alt="image" src="https://github.com/user-attachments/assets/e3c32570-9967-4da0-b598-649c069c967b" />
 
 
